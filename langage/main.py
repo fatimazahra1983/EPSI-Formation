@@ -10,4 +10,6 @@ if __name__ == '__main__':
 	leftOp = parse_operand(sys.argv[1])
 	rightOp = parse_operand(sys.argv[3])
 	operator = parse_operator(sys.argv[2])
-	print(operator.compute(leftOp, rightOp))
+	print('{} {} {} = {}'.format(
+		leftOp, operator, rightOp,
+		operator.compute(leftOp, rightOp)))

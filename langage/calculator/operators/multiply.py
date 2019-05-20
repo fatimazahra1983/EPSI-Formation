@@ -5,4 +5,10 @@ class Multiply(Operator):
 		pass
 
 	def compute(self, left, right):
-		return left.value() * right.value()
+		return left.value * right.value
+		
+	def __str__(self):
+		return '*'
+
+	def __repr__(self):
+		return 'Multiplication(*)'
