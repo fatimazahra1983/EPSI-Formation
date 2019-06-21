@@ -17,7 +17,8 @@ syntaxes ou même fonctionnelles, ne prend rien pour acquis !
 
 ### Règles fonctionnelles
 
-* Une ligne par calcul (format `Operand Operator Operand`)
+* Le client nous met à disposition plusieurs fichiers .txt
+* Chaque ligne de ce fichier représente un calcule qui doit être traité (format `Operand Operator Operand`)
 * Un opérande peut être soit :
 	* un nombre (entier ou décimal) avec le format `Number(XX)`
 	* une heure avec le format `Time(XXhYYm)`
@@ -33,3 +34,7 @@ Nom_du_fichier_en_entree:
 	* Operande Operator Operande : Erreur (si la ligne est en erreur)
 	* Operande Operator Operande = Resultat
 ```
+
+### Bonus
+
+L'outil doit être capable de parcourir l'arborescence et de découvrir tous les fichiers qui sont contenue dans le répertoire courant et ses sous répertoires 
