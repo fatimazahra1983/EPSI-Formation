@@ -2,7 +2,7 @@
 
 ## Scenario 
 
-Ton clien t'a donné une série de fichiers de calculs dans un format non standard 
+Ton client t'a donné une série de fichiers de calculs dans un format non standard 
 dont il souhaite avoir les résultats pour les intégrer en prod, sans avoir à 
 systématiquement les calculer à la main.
 Pourquoi ne pas lui faire une moulinette qui fait le travail automatiquement ? 
