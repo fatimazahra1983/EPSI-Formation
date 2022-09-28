@@ -1,29 +1,23 @@
-# Test Recrutement en Python.
+### Installation des dépendances
 
-## Langage
+L'API va utiliser différents modules Python. S'ils ne sont pas installés sur votre machine, vous pouvez les installer avec la commande suivante `python -m pip install -r requirements.txt`.
 
-Partie dont le but est de tester les connaissances du candidat en Python3.
+### Création de la base de données
 
-### Note pour l'examinateur
+L'API va se connecter à une base de données pour écrire ou lire du contenu. Pour initialiser la base et créer les tables nécessaires, lancez la commande `python init_db.py`.
 
-Un Readme de scénario est présent dans le dossier `langage/`
+### Démarrage de l'application
 
-Il est actuellement excessivement difficile de résoudre le scénario en une heure,
-et cela est _voulu_. Le but est de voir par où le candidat va commencer, si il va
-savoir prioriser ses tâches. 
-L'idéal est de faire passer ce playoff _sans_ pip. Le but étant de voir la connaissance
-du langage et de la lib standard du candidat et non pas sa connaissance de l'écosystème.
+Pour démarrer l'API, lancez la commande `uvicorn main:app` dans un terminal. Des logs devraient apparaître. Pour arrêter le service, tapez `Control` + `C`.
 
-Voici les topics que le playoff va vérifier chez le candidat : 
-* Conception OOP (class, `__init__`, héritage, self)
-* Surcharge d'opérateurs (`__add__`, `__mul__`, `__lt__`...)
-* split de strings / regexp
-* Lecture / écriture dans un fichier (idéalement avec des try...with)
-* Conceptions de scripts python (pas tout dans le même fichier...)
-* La gestion d'erreur (Exceptions ?)
-* Les Lambdas
+### Accès à l'API
 
-## Plateforme
+Pour accéder à l'API, allez sur http://127.0.0.1:8000/. Vous pouvez consulter http://127.0.0.1:8000/docs ou http://127.0.0.1:8000/redoc pour lire la documentation de l'API.
 
-Partie dont le but est de tester les connaissances du candidat dans l'écosystème 
-Python.
+### Besoin d'aide ?
+
+Voici quelques liens qui pourraient vous aider lors des exercises :
+* [Les types en Python](https://fastapi.tiangolo.com/python-types/)
+* [Tutoriel FastAPI](https://fastapi.tiangolo.com/tutorial/)
+* [Documentation Databses](https://www.encode.io/databases/)
+* [Documentation Pydantic](https://pydantic-docs.helpmanual.io/)
